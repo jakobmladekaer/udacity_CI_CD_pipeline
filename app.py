@@ -10,6 +10,9 @@ app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
 
+def add_two_numbers(x, y):
+    return x + y
+
 def scale(payload):
     """Scales Payload"""
 
@@ -56,7 +59,8 @@ def predict():
 
     try:
         clf = joblib.load("boston_housing_prediction.joblib")
-    except:
+    except Exception as e:
+        print("Error in JSON payload", e)
         LOG.info("JSON payload: %s json_payload")
         return "Model not loaded"
 
@@ -67,6 +71,7 @@ def predict():
     scaled_payload = scale(inference_payload)
     prediction = list(clf.predict(scaled_payload))
     return jsonify({'prediction': prediction})
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=5000, debug=True)
