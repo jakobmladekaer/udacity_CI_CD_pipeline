@@ -45,6 +45,7 @@ After that we simple clone the repository, which will output the following:
 Run the tests levering pytest by typing  make all from the cloud shell and see the following output:
 
 *Passing tests that are displayed after running the make all command from the Makefile*
+![images](Screenshot_Passing_test_after_make_all_v0.png)
 ![images](Screenshot_Passing_test_after_make_all.png)
 
 
@@ -92,7 +93,7 @@ Breaking a project down into smaller parts and planning for the next sprint is a
 *Spreadsheet*
 
 To plan for the project activites and to highlight aims for the short and longer time horizon an Excel spreadsheet has been leverage. 
-Spreadsheet is included in the Repo and named: ProjectPlan.xlsx
+A [Spreadsheet](ProjectPlan.xlsx) is included in the Repo and named: 
 
 Trello is additionally used to give an interactive kanban board experiance where tasks are planned, tracked and moved as they progress
 
