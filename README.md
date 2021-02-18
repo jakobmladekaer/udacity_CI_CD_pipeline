@@ -108,3 +108,6 @@ https://www.youtube.com/watch?v=xIWZDIa7EIo)
 
 To improve the application it would be benficial to increase the level of security for the web app adding a authentication layer so only the targeted  users have access to the web application. Additionally the load test showed room for improvements in the response time for handling a possible increasing consumption. The current app service plan is the free tier and it would be naturally to bump up the tier to B1, B2 or B3 depending on the possible load.  
 
+### Badges
+
+![Python application test with Github Actions](https://github.com/jakobmladekaer/udacity_CI_CD_pipeline/workflows/Python%20application%20test%20with%20Github%20Actions/badge.svg)
